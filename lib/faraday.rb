@@ -61,6 +61,7 @@ module Faraday
     autoload_all 'faraday/adapter',
       :ActionDispatch => 'action_dispatch',
       :NetHttp        => 'net_http',
+      :EMSynchrony    => 'em_synchrony',
       :Typhoeus       => 'typhoeus',
       :Patron         => 'patron',
       :Test           => 'test'
@@ -68,7 +69,7 @@ module Faraday
     register_lookup_modules \
       :action_dispatch => :ActionDispatch,
       :test            => :Test,
-      :net_http        => :NetHttp,
+      :em_synchrony    => :EMSynchrony,
       :typhoeus        => :Typhoeus,
       :patron          => :Patron,
       :net_http        => :NetHttp
